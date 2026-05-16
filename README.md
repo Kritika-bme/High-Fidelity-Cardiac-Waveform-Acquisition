@@ -1,6 +1,3 @@
-## Live Demo
-Interactive web app: [kritika-ecg-hrv.streamlit.app](https://kritika-ecg-hrv.streamlit.app)
-
 # ECG QRS Detector and HRV Analyzer
 
 ## Overview
@@ -21,6 +18,8 @@ Validated against cardiologist annotations from MIT-BIH Arrhythmia Database.
 
 Note: 1 missed beat at t=0.05s attributed to Butterworth filter 
 warm-up effect — consistent with Pan-Tompkins (1985) edge effect findings.
+<img width="1784" height="1182" alt="ecg_validation" src="https://github.com/user-attachments/assets/da64ca8a-3233-4980-8c16-a727aba31943" />
+
 
 ## HRV Analysis Results
 | Metric | Value | Clinical Reference |
@@ -29,6 +28,8 @@ warm-up effect — consistent with Pan-Tompkins (1985) edge effect findings.
 | SDNN | 81.58 ms | Healthy: >50 ms |
 | RMSSD | 141.85 ms | Higher = better autonomic function |
 | pNN50 | 40.0% | Healthy: >20% |
+<img width="1784" height="1535" alt="ecg_analysis" src="https://github.com/user-attachments/assets/cd7d97cd-af76-45a4-9b30-871a754b77d4" />
+
 
 ## Pipeline
 1. Load ECG data directly from PhysioNet MIT-BIH Arrhythmia Database via WFDB API
